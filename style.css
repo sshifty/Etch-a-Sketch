@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color:#dedede;
+    --reset:#d9534f;
+    --primary:#0275d8;
+    --hover-color:#f0ad4e;
+}
+body{
+    background-color: var(--background-color);
+}
+html {
+    /* footer support */
+    position: relative;
+    min-height: 100%;
+  }
+
+/*Button essential*/
+button.option{
+    background-color: var(--background-color);
+    margin:20px auto;
+    width:150px;
+    padding:10px 40px;
+    text-align: center;
+    border:1px solid #3d3d3d;
+    color:#3d3d3d;
+    border-radius: 40px;
+    cursor: pointer;
+}
+#header{
+    font-size: 5em;
+    text-align: center;
+}
+.line{
+    margin:0 auto;
+    width:10%;
+    border-top:3px blue solid;
+}
+.option-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="color"] {
+    margin:20px auto;   
+	-webkit-appearance: none;
+	border: none;
+	width: 80px;
+	height: 80px;
+    border-radius: 50%;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border-radius: 50%;
+} 
+.range{
+    display: flex;
+    justify-content: center;
+    width:150px;
+    margin:0 auto;
+}
+input[type="range"]{
+    
+    width:150px;
+    margin:0 auto;
+    margin-left: auto;    
+}
+.range-value{
+    margin:10px;
+    text-align: center;
+}
+.main-container{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.container{
+    background-color: white; 
+    padding: 0px;
+    border:2px solid black;  
+    width: 500px;
+    height: 500px;    
+    display:grid;
+    grid-template-rows: repeat(var(--gridRow),1fr);
+    grid-template-columns: repeat(var(--gridCol),1fr);
+}
+button.active{
+    background-color: black;
+    color:white;
+}
+
+  .hover{
+      background-color: var(--hover-color);
+  }
+
+ .user-input{
+    display: flex;
+    justify-content: center;
+    margin-top:10px;
+  }
+  .user-input button{
+    
+    padding:30px 50px;
+    background-color: var(--reset);
+    display: inline-block;
+    margin:10px auto;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+  }
+
+  .user-input #reset:hover{
+      background-color:#872320 ;
+  }
